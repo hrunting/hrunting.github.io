@@ -1,0 +1,67 @@
+* {
+    color: #000;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+}
+
+html {
+    font-size: 20px;
+    font-size: 2vmin;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto min-content auto;
+    grid-template-rows: auto min-content auto;
+    min-height: 100%;
+    justify-items: left;
+    margin: 0;
+}
+
+h1#name {
+    align-self: center;
+    font-size: 4rem;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: 1.5rem 0 0;
+}
+
+ul#leader {
+    align-self: end;
+    font-size: 6rem;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    list-style: none;
+    margin: 1.5rem 0;
+    padding: 0;
+}
+
+ul#leader li {
+    display: list-item;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+ul#leader li:last-child {
+    font-size: 5rem;
+    font-weight: lighter;
+}
+
+p#contact {
+    align-self: start;
+    font-size: 1.0rem;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    margin: 0.5rem 0;
+}
+
+p#contact a {
+    color: #666;
+    text-decoration: none;
+}
+
+p#contact a:hover {
+    color: #000;
+    border-bottom: 1px dotted #000;
+}
